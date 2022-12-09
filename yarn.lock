@@ -1744,9 +1744,9 @@ decamelize@^1.0.0, decamelize@^1.1.1, decamelize@^1.1.2:
   integrity sha1-9lNNFRSCabIDUue+4m9QH5oZEpA=
 
 decode-uri-component@^0.2.0:
-  version "0.2.0"
-  resolved "https://registry.yarnpkg.com/decode-uri-component/-/decode-uri-component-0.2.0.tgz#eb3913333458775cb84cd1a1fae062106bb87545"
-  integrity sha1-6zkTMzRYd1y4TNGh+uBiEGu4dUU=
+  version "0.2.2"
+  resolved "https://registry.yarnpkg.com/decode-uri-component/-/decode-uri-component-0.2.2.tgz#e69dbe25d37941171dd540e024c444cd5188e1e9"
+  integrity sha512-FqUYQ+8o158GyGTrMFJms9qh3CqTKvAqgqsTnkLI8sKu0028orqBhxNMFkFen0zGyg6epACD32pjVk58ngIErQ==
 
 deep-extend@~0.4.0:
   version "0.4.2"
@@ -3389,10 +3389,10 @@ liftoff@^2.1.0:
     rechoir "^0.6.2"
     resolve "^1.1.7"
 
-literallycanvas-core@^1.0.1:
+literallycanvas-core@oat-sa/literallycanvas-core.git#master:
   version "1.0.1"
-  resolved "https://registry.yarnpkg.com/literallycanvas-core/-/literallycanvas-core-1.0.1.tgz#585528b2416daad6a345eb56b492541a32dc5682"
-  integrity sha512-HYYjHOY0K+woobc6pMt99ZqHs58jY1lobGdYrdLSIY+rjhQynOu8g38aswxRpfjByg6Ti809CXhTRwcrpQdPMw==
+  uid a5a1e2110e00eca2a839374bd3d4f15dfe663330
+  resolved "https://codeload.github.com/oat-sa/literallycanvas-core/tar.gz/a5a1e2110e00eca2a839374bd3d4f15dfe663330"
 
 livereload-js@^2.2.0:
   version "2.2.2"
