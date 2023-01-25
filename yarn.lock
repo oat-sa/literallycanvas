@@ -3389,10 +3389,10 @@ liftoff@^2.1.0:
     rechoir "^0.6.2"
     resolve "^1.1.7"
 
-literallycanvas-core@^1.0.1:
+literallycanvas-core@oat-sa/literallycanvas-core.git#master:
   version "1.0.1"
-  resolved "https://registry.yarnpkg.com/literallycanvas-core/-/literallycanvas-core-1.0.1.tgz#585528b2416daad6a345eb56b492541a32dc5682"
-  integrity sha512-HYYjHOY0K+woobc6pMt99ZqHs58jY1lobGdYrdLSIY+rjhQynOu8g38aswxRpfjByg6Ti809CXhTRwcrpQdPMw==
+  uid a5a1e2110e00eca2a839374bd3d4f15dfe663330
+  resolved "https://codeload.github.com/oat-sa/literallycanvas-core/tar.gz/a5a1e2110e00eca2a839374bd3d4f15dfe663330"
 
 livereload-js@^2.2.0:
   version "2.2.2"
@@ -5476,9 +5476,9 @@ typedarray@~0.0.5:
   integrity sha1-hnrHTjhkGHsdPUfZlqeOxciDB3c=
 
 ua-parser-js@^0.7.9:
-  version "0.7.17"
-  resolved "https://registry.yarnpkg.com/ua-parser-js/-/ua-parser-js-0.7.17.tgz#e9ec5f9498b9ec910e7ae3ac626a805c4d09ecac"
-  integrity sha512-uRdSdu1oA1rncCQL7sCj8vSyZkgtL7faaw9Tc9rZ3mGgraQ7+Pdx7w5mnOSF3gw9ZNG6oc+KXfkon3bKuROm0g==
+  version "0.7.33"
+  resolved "https://registry.yarnpkg.com/ua-parser-js/-/ua-parser-js-0.7.33.tgz#1d04acb4ccef9293df6f70f2c3d22f3030d8b532"
+  integrity sha512-s8ax/CeZdK9R/56Sui0WM6y9OFREJarMRHqLB2EwkovemBxNQ+Bqu8GAsUnVcXKgphb++ghr/B2BZx4mahujPw==
 
 uglify-js@2.6.4, uglify-js@~2.6.1:
   version "2.6.4"
