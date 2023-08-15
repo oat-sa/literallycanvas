@@ -2,8 +2,8 @@ React = require './React-shim'
 DOM = require '../reactGUI/ReactDOMFactories-shim'
 createReactClass = require '../reactGUI/createReactClass-shim'
 PureRenderMixin = require 'react-addons-pure-render-mixin'
-{classSet, requestAnimationFrame, cancelAnimationFrame} = require '../core/util'
-{_} = require '../core/localization'
+{classSet, requestAnimationFrame, cancelAnimationFrame} = require '@core/util'
+{_} = require '@core/localization'
 
 
 parseHSLAString = (s) ->

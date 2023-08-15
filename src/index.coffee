@@ -1,17 +1,17 @@
 require './ie_customevent'
 require './ie_setLineDash'
 
-{default: LiterallyCanvasModel} = require './core/LiterallyCanvas'
-{default: defaultOptions} = require './core/defaultOptions'
+{default: LiterallyCanvasModel} = require '@core/LiterallyCanvas'
+{default: defaultOptions} = require '@core/defaultOptions'
 
-canvasRenderer = require './core/canvasRenderer'
-svgRenderer = require './core/svgRenderer'
-shapes = require './core/shapes'
-util = require './core/util'
-renderSnapshotToImage = require './core/renderSnapshotToImage'
-renderSnapshotToSVG = require './core/renderSnapshotToSVG'
+canvasRenderer = require '@core/canvasRenderer'
+svgRenderer = require '@core/svgRenderer'
+shapes = require '@core/shapes'
+util = require '@core/util'
+renderSnapshotToImage = require '@core/renderSnapshotToImage'
+renderSnapshotToSVG = require '@core/renderSnapshotToSVG'
 
-{localize} = require './core/localization'
+{localize} = require '@core/localization'
 
 # @ifdef INCLUDE_GUI
 LiterallyCanvasReactComponent = require './reactGUI/LiterallyCanvas'
@@ -107,15 +107,7 @@ registerJQueryPlugin = (_$) ->
       el.literallycanvas = init(el, opts)
     this
 
-
-# non-browserify compatibility
-if typeof window != 'undefined'
-  window.LC = {init}
-  if window.$
-      registerJQueryPlugin(window.$)
-
-
-module.exports = {
+exp = {
   init, registerJQueryPlugin, util, tools,
   setDefaultImageURLPrefix, defaultTools,
   # @ifdef INCLUDE_GUI
@@ -145,3 +137,12 @@ module.exports = {
 
   localize: localize
 }
+
+# non-browserify compatibility
+if typeof window != 'undefined'
+  window.LC = exp
+  if window.$
+      registerJQueryPlugin(window.$)
+
+
+module.exports = exp

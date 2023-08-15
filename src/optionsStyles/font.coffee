@@ -1,7 +1,7 @@
 DOM = require '../reactGUI/ReactDOMFactories-shim'
 createReactClass = require '../reactGUI/createReactClass-shim'
 {defineOptionsStyle} = require './optionsStyles'
-{_} = require '../core/localization'
+{_} = require '@core/localization'
 
 
 SANS_SERIF_FONTS = [

@@ -1,5 +1,5 @@
 {Tool} = require './base'
-{createShape} = require '../core/shapes'
+{createShape} = require '@core/shapes'
 
 
 module.exports = class Pan extends Tool

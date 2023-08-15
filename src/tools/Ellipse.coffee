@@ -1,5 +1,5 @@
 {ToolWithStroke} = require './base'
-{createShape} = require '../core/shapes'
+{createShape} = require '@core/shapes'
 
 
 # this is pretty similar to the Rectangle tool. maybe consolidate somehow.
