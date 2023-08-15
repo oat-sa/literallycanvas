@@ -1,10 +1,12 @@
 const path = require("path");
 const webpack = require("webpack");
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 module.exports = {
   entry: {
     literallycanvas: "./src/index.coffee",
     "literallycanvas-core": "./src/index.coffee",
+    "literallycanvas-css": "./scss/literallycanvas.scss",
   },
   output: {
     filename: "[name].js",
@@ -26,7 +28,11 @@ module.exports = {
       },
       {
         test: /\.scss$/,
-        use: ["style-loader", "css-loader", "sass-loader"],
+        use: [
+          MiniCssExtractPlugin.loader,
+          "css-loader",
+          "sass-loader",
+        ],
       },
       {
         test: /\.(js|jsx)$/,
@@ -50,6 +56,9 @@ module.exports = {
     new webpack.DefinePlugin({
       'process.env.INCLUDE_GUI': JSON.stringify(true),
     }),
+    new MiniCssExtractPlugin({
+        filename: "../css/literallycanvas.css",
+      }),
   ],
   devtool: "source-map",
   devServer: {
