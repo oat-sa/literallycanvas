@@ -33,12 +33,12 @@ Pull requests will be merged promptly if they are basically OK.
 Developing
 ----------
 
-Setup: `npm install --dev`
+Setup: `yarn`
 
-Watching and serving: `gulp dev`
+Watching and serving: `yarn dev`
 
-Browse to `localhost:8080/demo` and modify `demo/index.html` to test code
+Browse to `localhost:35728/demo` and modify `demo/index.html` to test code
 in progress.
 
-To generate a production-ready `.js` file, run `gulp` and pull out either
-`lib/js/literallycanvas.js` or `lib/js/literallycanvas.min.js`.
+To generate a production-ready `.js` file, run `yarn build` and pull out both
+`lib/js/literallycanvas.js` and `lib/js/literallycanvas.min.js`.
