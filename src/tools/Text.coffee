@@ -1,5 +1,5 @@
 {Tool} = require './base'
-{createShape} = require '../core/shapes'
+{createShape} = require '@core/shapes'
 
 
 getIsPointInBox = (point, box) ->
@@ -15,7 +15,8 @@ module.exports = class Text extends Tool
   name: 'Text'
   iconName: 'text'
 
-  constructor: ->
+  constructor: (lc) ->
+    super lc
     @text = ''
     @font = 'bold 18px sans-serif'
     @currentShape = null

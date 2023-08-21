@@ -1,8 +1,8 @@
 DOM = require '../reactGUI/ReactDOMFactories-shim'
 createReactClass = require '../reactGUI/createReactClass-shim'
 createSetStateOnEventMixin = require './createSetStateOnEventMixin'
-{_} = require '../core/localization'
-{classSet} = require '../core/util'
+{_} = require '@core/localization'
+{classSet} = require '@core/util'
 
 ClearButton = createReactClass
   displayName: 'ClearButton'
