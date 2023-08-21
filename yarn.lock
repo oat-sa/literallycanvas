@@ -2463,9 +2463,9 @@ launch-editor@^2.6.0:
     picocolors "^1.0.0"
     shell-quote "^1.7.3"
 
-literallycanvas-core@oat-sa/literallycanvas-core.git#fix/ADF-1382/fix-eslint-utils-vulnerability:
+literallycanvas-core@oat-sa/literallycanvas-core.git#master:
   version "1.0.1"
-  resolved "https://codeload.github.com/oat-sa/literallycanvas-core/tar.gz/e81f8d6d2631d1a9622492976af828827b1c7cc6"
+  resolved "https://codeload.github.com/oat-sa/literallycanvas-core/tar.gz/6a66d36de6a8f36cdfa1d9bd08c64825afa0e87f"
 
 loader-runner@^4.2.0:
   version "4.3.0"
