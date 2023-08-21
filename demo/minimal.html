@@ -1,7 +1,7 @@
 <html>
   <head>
     <!-- stylesheet -->
-    <link href="/lib/css/literallycanvas.css" rel="stylesheet">
+    <link href="/lib/css/literallycanvas.css" rel="stylesheet" />
 
     <!-- dependency: React.js -->
     <script src="/demo/react-16.1.1.js"></script>
@@ -18,10 +18,16 @@
 
     <!-- kick it off -->
     <script>
-        LC.init(
-            document.getElementsByClassName('my-drawing')[0],
-            {imageURLPrefix: '/lib/img'}
-        );
+      var scriptElement = document.querySelector(
+        'script[src$="/lib/js/literallycanvas.js"]'
+      );
+
+      var scriptDir = scriptElement.src.replace(/\/[^\/]*$/, "/");
+
+      var imageURLPrefix = scriptDir + "../img";
+      LC.init(document.getElementsByClassName("my-drawing")[0], {
+        imageURLPrefix,
+      });
     </script>
   </body>
 </html>

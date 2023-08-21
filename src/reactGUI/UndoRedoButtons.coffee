@@ -2,8 +2,8 @@ React = require './React-shim'
 DOM = require '../reactGUI/ReactDOMFactories-shim'
 createReactClass = require '../reactGUI/createReactClass-shim'
 createSetStateOnEventMixin = require './createSetStateOnEventMixin'
-{classSet} = require '../core/util'
-{_} = require '../core/localization'
+{classSet} = require '@core/util'
+{_} = require '@core/localization'
 
 createUndoRedoButtonComponent = (undoOrRedo) -> createReactClass
   displayName: if undoOrRedo == 'undo' then 'UndoButton' else 'RedoButton'

@@ -19,7 +19,7 @@ const DemoApp = createReactClass({
                     {x: 0, y: 0, width: 100, height: 100, strokeColor: '#000'})
                 ],
                 onInit: this.onInit,
-                imageURLPrefix: "/lib/img"
+                imageURLPrefix: __dirname + '/../lib/img'
             }
         };
     },

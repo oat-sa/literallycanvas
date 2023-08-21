@@ -1,7 +1,7 @@
 DOM = require '../reactGUI/ReactDOMFactories-shim'
 createReactClass = require '../reactGUI/createReactClass-shim'
 createSetStateOnEventMixin = require '../reactGUI/createSetStateOnEventMixin'
-{classSet} = require '../core/util'
+{classSet} = require '@core/util'
 
 
 module.exports = createReactClass

@@ -1,5 +1,5 @@
 {ToolWithStroke} = require './base'
-{createShape} = require '../core/shapes'
+{createShape} = require '@core/shapes'
 
 
 module.exports = class Line extends ToolWithStroke

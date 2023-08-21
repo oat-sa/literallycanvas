@@ -6,7 +6,7 @@ ClearButton = React.createFactory require './ClearButton'
 UndoRedoButtons = React.createFactory require './UndoRedoButtons'
 ZoomButtons = React.createFactory require './ZoomButtons'
 
-{_} = require '../core/localization'
+{_} = require '@core/localization'
 ColorWell = React.createFactory require './ColorWell'
 
 ColorPickers = React.createFactory createReactClass

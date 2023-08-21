@@ -1,8 +1,8 @@
 React = require './React-shim'
 DOM = require '../reactGUI/ReactDOMFactories-shim'
 createReactClass = require '../reactGUI/createReactClass-shim'
-{classSet} = require '../core/util'
-{_} = require '../core/localization'
+{classSet} = require '@core/util'
+{_} = require '@core/localization'
 
 
 createToolButton = (tool) ->

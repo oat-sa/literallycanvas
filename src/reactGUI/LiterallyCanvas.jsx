@@ -1,12 +1,12 @@
 const React = require('../reactGUI/React-shim');
 const createReactClass = require('../reactGUI/createReactClass-shim');
 const { findDOMNode } = require('../reactGUI/ReactDOM-shim');
-const { classSet } = require('../core/util');
+const { classSet } = require('@core/util');
 const Picker = require('./Picker');
 const Options = require('./Options');
 const createToolButton = require('./createToolButton');
-const {default: LiterallyCanvasModel} = require('../core/LiterallyCanvas');
-const {default: defaultOptions} = require('../core/defaultOptions');
+const {default: LiterallyCanvasModel} = require('@core/LiterallyCanvas');
+const {default: defaultOptions} = require('@core/defaultOptions');
 
 require('../optionsStyles/font');
 require('../optionsStyles/stroke-width');

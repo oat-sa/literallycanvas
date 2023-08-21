@@ -1,6 +1,6 @@
-actions = require '../core/actions'
+actions = require '@core/actions'
 {Tool} = require './base'
-{createShape} = require '../core/shapes'
+{createShape} = require '@core/shapes'
 
 module.exports = class SelectShape extends Tool
   name: 'SelectShape'
@@ -10,6 +10,7 @@ module.exports = class SelectShape extends Tool
     # This is a 'shadow' canvas -- we'll reproduce the shapes here, each shape
     # with a different color that corresponds to their index. That way we'll
     # be able to find which shape to select on the main canvas by pixel color.
+    super lc
     @selectCanvas = document.createElement('canvas')
     @selectCanvas.style['background-color'] = 'transparent'
     @selectCtx = @selectCanvas.getContext('2d')

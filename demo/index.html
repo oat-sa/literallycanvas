@@ -65,8 +65,14 @@
     <script src="/lib/js/literallycanvas.js"></script>
 
     <script type="text/javascript">
-      LC.setDefaultImageURLPrefix('/lib/img');
+      var scriptElement = document.querySelector(
+        'script[src$="/lib/js/literallycanvas.js"]'
+      );
 
+      var scriptDir = scriptElement.src.replace(/\/[^\/]*$/, "/");
+
+      var imageURLPrefix = scriptDir + "../img";
+      LC.setDefaultImageURLPrefix(imageURLPrefix);
       var lc = null;
 
       var updateSVG = function() {

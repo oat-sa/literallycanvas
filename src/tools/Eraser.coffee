@@ -1,5 +1,5 @@
 Pencil = require './Pencil'
-{createShape} = require '../core/shapes'
+{createShape} = require '@core/shapes'
 
 
 module.exports = class Eraser extends Pencil
